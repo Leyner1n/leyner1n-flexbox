@@ -1,17 +1,26 @@
 body {
     display: flex;
-    height: 100vh;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     background-color: skyblue;
+    height: 100vh;
     margin: 0;
 }
 
 .circle {
-    display: flex;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: rgb(255, 101, 127);
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    background-color: rgb(255, 72, 27);
+}
+
+.circle:nth-child(1) {
+    align-self: flex-end;
+}
+
+.circle:nth-child(2) {
+    align-self: center;
+}
+
+.circle:nth-child(3) {
+    align-self: flex-start;
 }
