@@ -1,26 +1,31 @@
 body {
     display: flex;
-    justify-content: space-between;
-    background-color: skyblue;
+    flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-color: skyblue;
 }
 
-.circle {
-    height: 250px;
-    width: 250px;
-    border-radius: 100%;
-    background-color: rgb(255, 72, 27);
+.box {
+    height: 200px;
+    width: 200px;
+    border: 3px solid skyblue;
+    background-color: brown;
 }
 
-.circle:nth-child(1) {
-    align-self: flex-end;
+.row {
+    display: flex;
 }
 
-.circle:nth-child(2) {
-    align-self: center;
+.row:nth-child(2) {
+    justify-content: space-between;
 }
 
-.circle:nth-child(3) {
-    align-self: flex-start;
+.row:nth-child(3) {
+    justify-content: space-between;
+    margin-top: auto;
 }
+
+.box:nth-child(3) { 
+    margin-left: auto;
+}   
